@@ -1,0 +1,17 @@
+# Core dependencies for YouTube Shorts Channel Agent
+python-dotenv>=1.0.0
+requests>=2.31.0
+pydantic>=2.0.0
+
+# Video editing & audio processing
+moviepy>=1.0.3
+Pillow>=10.0.0
+
+# Google & YouTube APIs
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+
+# AI & Generation
+google-genai>=0.1.0
+openai>=1.0.0
