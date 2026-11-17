@@ -291,12 +291,12 @@ async function renderOverviewScreen(container) {
               <div class="${barColor} h-full rounded" style="width: ${ep.progress}%"></div>
             </div>
           </div>
-          <div class="flex items-center justify-between pt-space-xs border-t border-outline-variant text-body-sm">
-            <div class="flex items-center gap-space-xs ${isAttention ? 'text-secondary font-semibold' : 'text-on-surface-variant'}">
-              <span class="material-symbols-outlined text-[16px]">${isAttention ? 'warning' : 'check_circle'}</span>
-              <span>${ep.blocker_note || 'Pipeline synced. Media fulfilling smoothly.'}</span>
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-space-xs border-t border-outline-variant text-body-sm">
+            <div class="flex items-center gap-space-xs ${isAttention ? 'text-secondary font-semibold' : 'text-on-surface-variant'} min-w-0 flex-1">
+              <span class="material-symbols-outlined text-[16px] flex-shrink-0">${isAttention ? 'warning' : 'check_circle'}</span>
+              <span class="truncate">${ep.blocker_note || 'Pipeline synced. Media fulfilling smoothly.'}</span>
             </div>
-            <button onclick="navigateTo('episode-tracker')" class="font-label-md text-label-md text-on-surface bg-surface-container-lowest px-space-sm py-1 rounded border border-outline-variant hover:bg-surface-container transition-colors retro-btn">
+            <button onclick="navigateTo('episode-tracker')" class="flex-shrink-0 font-label-md text-label-md text-on-surface bg-surface-container-lowest px-space-sm py-1 rounded border border-outline-variant hover:bg-surface-container transition-colors retro-btn whitespace-nowrap">
               Inspect timeline
             </button>
           </div>
@@ -308,7 +308,7 @@ async function renderOverviewScreen(container) {
   container.innerHTML = `
     <div class="w-full max-w-7xl mx-auto p-space-md lg:p-margin-desktop flex flex-col gap-space-lg">
       <!-- Top Hero Glanceable Triage Row -->
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop w-full">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop w-full">
         <!-- Module A: Pending Prompts -->
         <div class="relative bg-surface-container-lowest border-l-4 border-l-secondary-container border border-outline-variant rounded-lg p-space-lg flex flex-col justify-between retro-card">
           <div class="flex flex-col gap-space-xs">
@@ -319,11 +319,11 @@ async function renderOverviewScreen(container) {
             <div class="font-display-hero text-display-hero text-on-surface tracking-tight mt-space-xs">${data.pending_prompts_count}</div>
             <p class="font-body-md text-body-md text-on-surface-variant leading-snug">${data.pending_breakdown}</p>
           </div>
-          <div class="mt-space-lg pt-space-sm border-t border-outline-variant flex items-center justify-between">
-            <button onclick="navigateTo('prompt-queue')" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface retro-btn">
+          <div class="mt-space-md pt-space-sm border-t border-outline-variant flex flex-wrap items-center justify-between gap-2">
+            <button onclick="navigateTo('prompt-queue')" class="bg-secondary-container text-on-primary font-bold text-xs px-3 py-1.5 rounded border border-on-surface retro-btn whitespace-nowrap">
               Open prompt queue
             </button>
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Auto-dispatch ready</span>
+            <span class="text-[11px] text-on-surface-variant font-medium whitespace-nowrap">Auto-dispatch ready</span>
           </div>
         </div>
 
@@ -337,11 +337,11 @@ async function renderOverviewScreen(container) {
             <div class="font-display-hero text-display-hero text-on-surface tracking-tight mt-space-xs">${data.in_progress_count}</div>
             <p class="font-body-md text-body-md text-on-surface-variant leading-snug">Tracked across script, voice, media queue, and assembly</p>
           </div>
-          <div class="mt-space-lg pt-space-sm border-t border-outline-variant flex items-center justify-between">
-            <button onclick="navigateTo('episode-tracker')" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant hover:bg-surface-container-low retro-btn">
+          <div class="mt-space-md pt-space-sm border-t border-outline-variant flex flex-wrap items-center justify-between gap-2">
+            <button onclick="navigateTo('episode-tracker')" class="bg-surface-container-lowest text-on-surface font-bold text-xs px-3 py-1.5 rounded border border-outline-variant hover:bg-surface-container-low retro-btn whitespace-nowrap">
               Inspect timeline
             </button>
-            <span class="font-label-sm text-label-sm text-primary font-semibold">Live Pipeline Active</span>
+            <span class="text-[11px] text-primary font-semibold whitespace-nowrap">Live Pipeline Active</span>
           </div>
         </div>
 
@@ -355,11 +355,11 @@ async function renderOverviewScreen(container) {
             <div class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">${nextSchedDate}</div>
             <p class="font-body-md text-body-md text-on-surface-variant leading-snug">${nextSchedTitle}</p>
           </div>
-          <div class="mt-space-lg pt-space-sm border-t border-outline-variant flex items-center justify-between">
-            <button onclick="navigateTo('calendar')" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant hover:bg-surface-container-low retro-btn">
+          <div class="mt-space-md pt-space-sm border-t border-outline-variant flex flex-wrap items-center justify-between gap-2">
+            <button onclick="navigateTo('calendar')" class="bg-surface-container-lowest text-on-surface font-bold text-xs px-3 py-1.5 rounded border border-outline-variant hover:bg-surface-container-low retro-btn whitespace-nowrap">
               Review package
             </button>
-            <span class="font-label-sm text-label-sm text-on-surface font-medium bg-surface-container-high px-space-xs py-0.5 rounded border border-outline-variant">Locked</span>
+            <span class="text-[11px] text-on-surface font-medium bg-surface-container-high px-2 py-0.5 rounded border border-outline-variant whitespace-nowrap">Locked</span>
           </div>
         </div>
       </section>
@@ -470,18 +470,18 @@ async function renderPromptQueueScreen(container) {
 
       promptCards += `
         <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md retro-card">
-          <div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs border-b border-outline-variant">
-            <div class="flex items-center gap-space-sm">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs border-b border-outline-variant">
+            <div class="flex flex-wrap items-center gap-2 min-w-0">
               <span class="font-headline-sm text-headline-sm text-on-surface">${p.episode_title} • ${p.scene}</span>
-              <span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant border border-outline-variant font-medium">${p.badge_label || p.model}</span>
+              <span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-on-surface-variant border border-outline-variant font-medium whitespace-nowrap">${p.badge_label || p.model}</span>
             </div>
-            <div>${statusBadge}</div>
+            <div class="flex-shrink-0">${statusBadge}</div>
           </div>
 
           <div class="flex flex-col gap-1">
             <div class="flex items-center justify-between">
               <span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">${p.prompt_heading || 'Generation Prompt'}</span>
-              <button onclick="copyPromptText('${p.id}')" class="flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-surface bg-surface-container-lowest hover:bg-surface-container-low px-space-sm py-1 rounded border border-outline-variant transition-all retro-btn">
+              <button onclick="copyPromptText('${p.id}')" class="flex items-center gap-1 font-label-md text-label-md text-primary hover:text-on-surface bg-surface-container-lowest hover:bg-surface-container-low px-space-sm py-1 rounded border border-outline-variant transition-all retro-btn whitespace-nowrap">
                 <span class="material-symbols-outlined text-[16px]">content_copy</span>
                 <span>Copy Prompt</span>
               </button>
@@ -489,18 +489,18 @@ async function renderPromptQueueScreen(container) {
             <div id="prompt-text-${p.id}" class="bg-surface-container-low p-space-md rounded border border-outline-variant font-mono text-body-sm text-on-surface select-all leading-relaxed whitespace-pre-wrap">${p.prompt_text}</div>
           </div>
 
-          <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-outline-variant">
-            <div class="flex flex-wrap gap-1 items-center">
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-space-xs border-t border-outline-variant">
+            <div class="flex flex-wrap gap-1.5 items-center min-w-0">
               ${specsList}
             </div>
-            <div class="flex items-center gap-space-xs">
+            <div class="flex items-center gap-2 flex-shrink-0">
               ${isFulfilled && p.file_path ? `
-                <a href="/${p.file_path}" target="_blank" class="flex items-center gap-1 font-label-md text-label-md text-on-primary bg-primary px-space-sm py-1 rounded border border-on-surface hover:opacity-90 transition-opacity retro-btn">
+                <a href="/${p.file_path}" target="_blank" class="flex items-center gap-1 font-label-md text-label-md text-on-primary bg-primary px-space-sm py-1 rounded border border-on-surface hover:opacity-90 transition-opacity retro-btn whitespace-nowrap">
                   <span class="material-symbols-outlined text-[16px]">preview</span>
                   <span>Inspect Asset</span>
                 </a>
               ` : `
-                <button onclick="openUploadModal('${p.id}', '${p.episode_title.replace(/'/g, "\\'")}', '${p.scene}')" class="flex items-center gap-1 font-label-md text-label-md text-on-primary bg-secondary-container px-space-md py-1 rounded border border-on-surface retro-btn">
+                <button onclick="openUploadModal('${p.id}', '${p.episode_title.replace(/'/g, "\\'")}', '${p.scene}')" class="flex items-center gap-1 font-label-md text-label-md text-on-primary bg-secondary-container px-space-md py-1 rounded border border-on-surface retro-btn whitespace-nowrap">
                   <span class="material-symbols-outlined text-[16px]">upload_file</span>
                   <span>Fulfill (Upload Media)</span>
                 </button>
@@ -667,13 +667,13 @@ async function renderEpisodeTrackerScreen(container) {
 
       cards += `
         <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md retro-card">
-          <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs border-b border-outline-variant">
-            <div class="flex items-center gap-space-sm">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs border-b border-outline-variant">
+            <div class="flex flex-wrap items-center gap-2 min-w-0">
               <span class="font-headline-md text-headline-md text-on-surface">#${ep.episode_number}: ${ep.title}</span>
-              <span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded font-semibold text-primary border border-outline-variant">${ep.stage}</span>
+              <span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded font-semibold text-primary border border-outline-variant whitespace-nowrap">${ep.stage}</span>
             </div>
-            <div class="flex items-center gap-space-xs">
-              <span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded border border-outline-variant">Target: ${ep.scheduled_date || 'Unscheduled'}</span>
+            <div class="flex items-center gap-2 flex-shrink-0">
+              <span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-2 py-0.5 rounded border border-outline-variant whitespace-nowrap">Target: ${ep.scheduled_date || 'Unscheduled'}</span>
             </div>
           </div>
 
@@ -696,20 +696,24 @@ async function renderEpisodeTrackerScreen(container) {
             </div>
           </div>
 
-          <div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-outline-variant">
-            <div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
-              <span class="material-symbols-outlined text-[18px]">timer</span>
-              <span>Duration: ${ep.target_duration}</span>
-              <span class="mx-1">•</span>
-              <span class="material-symbols-outlined text-[18px]">verified</span>
-              <span>Hook Score: ${ep.score}/100</span>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-space-xs border-t border-outline-variant text-body-sm">
+            <div class="flex flex-wrap items-center gap-3 text-body-sm text-on-surface-variant">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[18px]">timer</span>
+                <span>Duration: ${ep.target_duration}</span>
+              </span>
+              <span>•</span>
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+                <span>Hook Score: ${ep.score}/100</span>
+              </span>
             </div>
-            <div class="flex items-center gap-space-xs">
-              <button onclick="assembleEpisode('${ep.id}')" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant hover:bg-surface-container retro-btn flex items-center gap-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="assembleEpisode('${ep.id}')" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant hover:bg-surface-container retro-btn flex items-center gap-1 whitespace-nowrap">
                 <span class="material-symbols-outlined text-[16px]">movie_creation</span>
                 <span>Trigger Assembly</span>
               </button>
-              <button onclick="viewEpisodeScript('${ep.id}')" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1">
+              <button onclick="viewEpisodeScript('${ep.id}')" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1 whitespace-nowrap">
                 <span class="material-symbols-outlined text-[16px]">edit_note</span>
                 <span>Open Script</span>
               </button>
@@ -740,7 +744,7 @@ async function renderEpisodeTrackerScreen(container) {
       </div>
 
       <!-- 4 Metric Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
         <div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex items-center gap-space-md retro-card">
           <div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary">
             <span class="material-symbols-outlined">movie</span>
@@ -880,9 +884,9 @@ async function renderHistoryLibraryScreen(container) {
             </div>
           ` : ''}
 
-          <div class="flex items-center justify-between pt-space-xs border-t border-outline-variant text-label-sm">
-            <span class="text-on-surface-variant font-medium">${a.tableFormat}</span>
-            <button onclick="copyRawText('${(a.promptOrDetail || '').replace(/'/g, "\\'")}')" class="font-label-md text-label-md text-primary hover:text-on-surface bg-surface-container-lowest px-space-sm py-0.5 rounded border border-outline-variant retro-btn">
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-space-xs border-t border-outline-variant text-label-sm">
+            <span class="text-on-surface-variant font-medium whitespace-nowrap">${a.tableFormat}</span>
+            <button onclick="copyRawText('${(a.promptOrDetail || '').replace(/'/g, "\\'")}')" class="font-label-md text-label-md text-primary hover:text-on-surface bg-surface-container-lowest px-space-sm py-0.5 rounded border border-outline-variant retro-btn whitespace-nowrap">
               Copy Prompt
             </button>
           </div>
@@ -902,20 +906,20 @@ async function renderHistoryLibraryScreen(container) {
 
       <!-- Search & Filters -->
       <div class="bg-surface-container-lowest p-space-md rounded-lg border border-outline-variant flex flex-wrap items-center justify-between gap-space-md retro-card">
-        <div class="flex rounded border border-outline-variant overflow-hidden text-label-sm font-label-sm">
+        <div class="flex flex-wrap rounded border border-outline-variant overflow-hidden text-label-sm font-label-sm">
           <button onclick="setLibraryTypeFilter('all')" class="px-space-sm py-1 ${state.libraryTypeFilter === 'all' ? 'bg-secondary-container text-on-primary font-bold' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface'}">All Assets</button>
           <button onclick="setLibraryTypeFilter('video')" class="px-space-sm py-1 ${state.libraryTypeFilter === 'video' ? 'bg-secondary-container text-on-primary font-bold' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface'}">Videos</button>
           <button onclick="setLibraryTypeFilter('voice')" class="px-space-sm py-1 ${state.libraryTypeFilter === 'voice' ? 'bg-secondary-container text-on-primary font-bold' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface'}">Voice Stems</button>
           <button onclick="setLibraryTypeFilter('image')" class="px-space-sm py-1 ${state.libraryTypeFilter === 'image' ? 'bg-secondary-container text-on-primary font-bold' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface'}">Images</button>
         </div>
 
-        <div class="relative min-w-[260px]">
+        <div class="relative w-full sm:w-auto min-w-0 sm:min-w-[260px] flex-1">
           <input type="text" value="${state.librarySearch}" oninput="handleLibrarySearch(this.value)" placeholder="Search library prompts or models..." class="w-full bg-surface-container-low border border-outline-variant rounded px-space-md py-1 text-body-sm text-on-surface focus:outline-none focus:border-primary" />
           <span class="material-symbols-outlined absolute right-2 top-1.5 text-on-surface-variant text-[18px]">search</span>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
         ${cards}
       </div>
     </div>
@@ -989,12 +993,12 @@ async function renderScriptViewerScreen(container) {
           <h1 class="font-headline-lg text-headline-lg text-on-surface">Script Studio</h1>
           <p class="font-body-md text-body-md text-on-surface-variant">Live script editor integrated with hook scoring (<code class="bg-surface-container px-1 py-0.5 rounded text-primary font-bold">hookscore.py</code>) and voice direction.</p>
         </div>
-        <div class="flex items-center gap-space-sm">
-          <button onclick="triggerIdeateModal()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant retro-btn flex items-center gap-1">
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="triggerIdeateModal()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant retro-btn flex items-center gap-1 whitespace-nowrap">
             <span class="material-symbols-outlined text-[18px]">lightbulb</span>
             <span>Generate Idea (/yt-ideate)</span>
           </button>
-          <button onclick="triggerVoiceDirection()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant retro-btn flex items-center gap-1">
+          <button onclick="triggerVoiceDirection()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant retro-btn flex items-center gap-1 whitespace-nowrap">
             <span class="material-symbols-outlined text-[18px]">record_voice_over</span>
             <span>Voice Direction</span>
           </button>
@@ -1015,12 +1019,12 @@ async function renderScriptViewerScreen(container) {
               <h2 class="font-headline-md text-headline-md text-on-surface">${activeScript.title || 'Script Editor'}</h2>
               <span class="font-label-sm text-label-sm text-on-surface-variant">Episode: ${activeScript.episode_id || ''}</span>
             </div>
-            <div class="flex items-center gap-space-xs">
-              <button onclick="scoreCurrentHook()" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="scoreCurrentHook()" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1 whitespace-nowrap">
                 <span class="material-symbols-outlined text-[16px]">speed</span>
                 <span>Score Hook (hookscore.py)</span>
               </button>
-              <button onclick="saveActiveScript('${activeScript.episode_id}')" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1">
+              <button onclick="saveActiveScript('${activeScript.episode_id}')" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1 whitespace-nowrap">
                 <span class="material-symbols-outlined text-[16px]">save</span>
                 <span>Save Script</span>
               </button>
@@ -1197,15 +1201,15 @@ async function renderCalendarScreen(container) {
       episodeSlotCards += `
         <div class="p-space-md rounded border border-outline-variant bg-surface flex flex-col justify-between gap-space-xs retro-card">
           <div class="flex flex-col gap-1">
-            <div class="flex items-center justify-between">
+            <div class="flex flex-wrap items-center justify-between gap-1">
               <span class="font-label-sm text-label-sm text-primary font-bold">#${e.episode_number}</span>
-              <span class="font-label-sm text-label-sm bg-surface-container-high px-space-xs py-0.5 rounded font-semibold text-on-surface">${e.scheduled_date || 'Unscheduled'}</span>
+              <span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded font-semibold text-on-surface whitespace-nowrap">${e.scheduled_date || 'Unscheduled'}</span>
             </div>
-            <span class="font-headline-sm text-headline-sm text-on-surface">${e.title}</span>
-            <span class="text-body-sm text-on-surface-variant">${e.stage}</span>
+            <span class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">${e.title}</span>
+            <span class="text-body-sm text-on-surface-variant line-clamp-1">${e.stage}</span>
           </div>
-          <div class="pt-space-xs border-t border-outline-variant flex items-center justify-between">
-            <button onclick="openAssignDateModal('${e.id}', '${e.title.replace(/'/g, "\\'")}', '${e.scheduled_date || ''}')" class="font-label-md text-label-md text-primary bg-surface-container-lowest px-space-sm py-1 rounded border border-outline-variant hover:bg-surface-container retro-btn flex items-center gap-1">
+          <div class="pt-space-xs border-t border-outline-variant flex flex-wrap items-center justify-between gap-2">
+            <button onclick="openAssignDateModal('${e.id}', '${e.title.replace(/'/g, "\\'")}', '${e.scheduled_date || ''}')" class="font-label-md text-label-md text-primary bg-surface-container-lowest px-space-sm py-1 rounded border border-outline-variant hover:bg-surface-container retro-btn flex items-center gap-1 whitespace-nowrap">
               <span class="material-symbols-outlined text-[14px]">event</span>
               <span>Assign Date</span>
             </button>
@@ -1223,7 +1227,7 @@ async function renderCalendarScreen(container) {
           <p class="font-body-md text-body-md text-on-surface-variant">Assign real release dates to episodes; saved directly into <code class="bg-surface-container px-1 py-0.5 rounded text-primary font-bold">data/episodes.json</code></p>
         </div>
         <div class="flex items-center gap-space-sm">
-          <button onclick="handleScheduleAllClick()" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface retro-btn flex items-center gap-1">
+          <button onclick="handleScheduleAllClick()" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface retro-btn flex items-center gap-1 whitespace-nowrap">
             <span class="material-symbols-outlined text-[18px]">auto_schedule</span>
             <span>Schedule All (YouTube OAuth)</span>
           </button>
@@ -1245,7 +1249,7 @@ async function renderCalendarScreen(container) {
           <span class="font-label-sm text-label-sm text-primary font-bold">Optimal Release Window: 18:00 UTC</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
           ${episodeSlotCards}
         </div>
       </div>
@@ -1389,11 +1393,11 @@ async function renderSettingsScreen(container) {
             <h2 class="font-headline-md text-headline-md text-on-surface">Master Channel Voice (.agents/youtube/voice.md)</h2>
             <p class="font-body-md text-body-md text-on-surface-variant">Read by every skill (yt-ideate, yt-script, yt-voice-direction). Live editor writes directly to disk.</p>
           </div>
-          <div class="flex items-center gap-space-xs">
-            <button onclick="validateVoiceMd()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant retro-btn">
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="validateVoiceMd()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant retro-btn whitespace-nowrap">
               Validate Markdown
             </button>
-            <button onclick="saveVoiceMd()" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1">
+            <button onclick="saveVoiceMd()" class="bg-primary text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn flex items-center gap-1 whitespace-nowrap">
               <span class="material-symbols-outlined text-[16px]">save</span>
               <span>Save voice.md</span>
             </button>
@@ -1405,12 +1409,12 @@ async function renderSettingsScreen(container) {
 
       <!-- Telegram Bot Notification Status (Placeholder Section for next wiring) -->
       <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md retro-card">
-        <div class="flex items-center justify-between pb-space-xs border-b border-outline-variant">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-space-xs border-b border-outline-variant">
           <div>
             <h2 class="font-headline-md text-headline-md text-on-surface">Telegram Notification Dispatcher</h2>
             <p class="font-body-md text-body-md text-on-surface-variant">Instant mobile alert dispatch when scenes finish generating or ready for assembly</p>
           </div>
-          <span class="bg-tertiary-fixed-dim text-on-tertiary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded font-semibold">Wiring In Next Step</span>
+          <span class="bg-tertiary-fixed-dim text-on-tertiary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded font-semibold whitespace-nowrap">Wiring In Next Step</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
@@ -1424,12 +1428,12 @@ async function renderSettingsScreen(container) {
           </div>
         </div>
 
-        <div class="flex items-center justify-between pt-space-xs border-t border-outline-variant">
-          <button onclick="handleTelegramPing()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant retro-btn flex items-center gap-1">
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-space-xs border-t border-outline-variant">
+          <button onclick="handleTelegramPing()" class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-1 rounded border border-outline-variant retro-btn flex items-center gap-1 whitespace-nowrap">
             <span class="material-symbols-outlined text-[16px]">send</span>
             <span>Send Test Ping</span>
           </button>
-          <button onclick="showToast('Telegram connection credentials saved')" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn">
+          <button onclick="showToast('Telegram connection credentials saved')" class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-1 rounded border border-on-surface retro-btn whitespace-nowrap">
             Save Bot Settings
           </button>
         </div>
@@ -1438,7 +1442,7 @@ async function renderSettingsScreen(container) {
       <!-- Integration Telemetry Card -->
       <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md retro-card">
         <h2 class="font-headline-md text-headline-md text-on-surface">Integration Telemetry</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md">
           <div class="p-space-md rounded border border-outline-variant bg-surface flex flex-col gap-1">
             <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Gemini / AI Studio Workflow</span>
             <span class="font-headline-sm text-headline-sm text-primary">${status.gemini_api}</span>

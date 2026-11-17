@@ -66,17 +66,32 @@ h1, h2, h3, h4, .font-headline-sm, .font-headline-md, .font-headline-lg, .font-d
 /* Material Drop Shadow and Retro Tactile Click */
 .retro-card {
   box-shadow: 2px 2px 0px #0c1f19;
+  min-width: 0;
 }
 
 .retro-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 2px 2px 0px #0c1f19;
   transition: all 0.1s ease;
   user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .retro-btn:active {
   transform: translate(2px, 2px);
   box-shadow: none;
+}
+
+/* Card action bar wrapper ensuring buttons and status labels never collide */
+.card-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 /* Custom scrollbars */
