@@ -1,0 +1,93 @@
+/* Pegboard — Cube Shorts Lab Design System */
+
+:root {
+  --color-on-primary: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed-dim: #ffb4a4;
+  --color-on-secondary-fixed-variant: #8c1800;
+  --color-surface: #e8fef5;
+  --color-primary-fixed-dim: #55dbca;
+  --color-secondary-container: #ff5d3b;
+  --color-surface-container-low: #e2f9ef;
+  --color-surface-container: #ddf3e9;
+  --color-error: #ba1a1a;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #cf9a06;
+  --color-tertiary: #795900;
+  --color-on-tertiary-fixed-variant: #5c4300;
+  --color-tertiary-fixed-dim: #f7be36;
+  --color-error-container: #ffdad6;
+  --color-outline-variant: #bbcac6;
+  --color-inverse-primary: #55dbca;
+  --color-surface-bright: #e8fef5;
+  --color-secondary: #b42809;
+  --color-primary-fixed: #75f7e6;
+  --color-surface-variant: #d1e7de;
+  --color-surface-container-highest: #d1e7de;
+  --color-background: #e8fef5;
+  --color-on-secondary: #ffffff;
+  --color-surface-tint: #006a60;
+  --color-on-secondary-container: #5c0c00;
+  --color-on-tertiary-fixed: #261900;
+  --color-inverse-on-surface: #dff6ec;
+  --color-on-primary-fixed-variant: #005048;
+  --color-on-primary-container: #00413a;
+  --color-primary: #006a60;
+  --color-on-error: #ffffff;
+  --color-on-surface: #0c1f19;
+  --color-surface-dim: #c9dfd6;
+  --color-secondary-fixed: #ffdad3;
+  --color-on-tertiary-container: #4b3600;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed: #ffdea0;
+  --color-on-background: #0c1f19;
+  --color-on-surface-variant: #3c4947;
+  --color-on-secondary-fixed: #3e0500;
+  --color-surface-container-high: #d7ede4;
+  --color-inverse-surface: #21342e;
+  --color-outline: #6c7a77;
+  --color-primary-container: #1fb6a6;
+  --color-on-primary-fixed: #00201c;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+h1, h2, h3, h4, .font-headline-sm, .font-headline-md, .font-headline-lg, .font-display-hero, .font-metric-num {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Material Drop Shadow and Retro Tactile Click */
+.retro-card {
+  box-shadow: 2px 2px 0px #0c1f19;
+}
+
+.retro-btn {
+  box-shadow: 2px 2px 0px #0c1f19;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.retro-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-low);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 3px;
+}

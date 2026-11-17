@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#ffb4a4","on-secondary-fixed-variant":"#8c1800","surface":"#e8fef5","primary-fixed-dim":"#55dbca","secondary-container":"#ff5d3b","surface-container-low":"#e2f9ef","surface-container":"#ddf3e9","error":"#ba1a1a","on-tertiary":"#ffffff","tertiary-container":"#cf9a06","tertiary":"#795900","on-tertiary-fixed-variant":"#5c4300","tertiary-fixed-dim":"#f7be36","error-container":"#ffdad6","outline-variant":"#bbcac6","inverse-primary":"#55dbca","surface-bright":"#e8fef5","secondary":"#b42809","primary-fixed":"#75f7e6","surface-variant":"#d1e7de","surface-container-highest":"#d1e7de","background":"#e8fef5","on-secondary":"#ffffff","surface-tint":"#006a60","on-secondary-container":"#5c0c00","on-tertiary-fixed":"#261900","inverse-on-surface":"#dff6ec","on-primary-fixed-variant":"#005048","on-primary-container":"#00413a","primary":"#006a60","on-error":"#ffffff","on-surface":"#0c1f19","surface-dim":"#c9dfd6","secondary-fixed":"#ffdad3","on-tertiary-container":"#4b3600","on-error-container":"#93000a","tertiary-fixed":"#ffdea0","on-background":"#0c1f19","on-surface-variant":"#3c4947","on-secondary-fixed":"#3e0500","surface-container-high":"#d7ede4","inverse-surface":"#21342e","outline":"#6c7a77","primary-container":"#1fb6a6","on-primary-fixed":"#00201c"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","margin-tablet":"1.5rem","gutter-tablet":"0.75rem","space-lg":"1.5rem","space-xl":"2rem","margin":"1rem","gutter-desktop":"1.25rem","margin-desktop":"2rem","gutter":"1rem","space-xs":"0.25rem","space-md":"1rem"},fontFamily:{"headline-lg-mobile":["Outfit"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"display-hero-mobile":["Outfit"],"metric-num":["Outfit"],"headline-sm":["Outfit"],"display-hero":["Outfit"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"metric-num":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"54px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKRe7KnnTKvh4PMyczW5U33ToH6I3MPs49XScr-1McrD3Jk9To5enik7U7Uvi33fWZHbk1kwGLJybrDivY49Eny3-S-UuklMw46nbgxDJ2mf5B7Zu_dExtn3MDLXD-hCGAVOkDmbkz63hfr_4OyBQChS4OhDvsdf-FILBPN7J6w9SqZvZdXlJDDUcfpleCzUo2BqZNLCo_uxi6FP2kMD2PxV-jw7mMH21Cth0sU4"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Pegboard</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Cube Shorts Lab</span></div></div></div><nav class="flex flex-col py-space-sm" data-active-classes="border-l-4 border-primary-container text-on-surface font-bold bg-surface-container-low"><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="overview" href="#"><span class="material-symbols-outlined text-outline">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="prompt-queue" href="#"><span class="material-symbols-outlined text-outline">terminal</span><span>Prompt Queue</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="episode-tracker" href="#"><span class="material-symbols-outlined text-outline">video_library</span><span>Episode Tracker</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="history-and-library" href="#"><span class="material-symbols-outlined text-outline">folder_open</span><span>History &amp; Library</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="script-viewer" href="#"><span class="material-symbols-outlined text-outline">description</span><span>Script Viewer</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="calendar" href="#"><span class="material-symbols-outlined text-outline">calendar_today</span><span>Calendar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="publish-log" href="#"><span class="material-symbols-outlined text-outline">publish</span><span>Publish Log</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="settings" href="#"><span class="material-symbols-outlined text-outline">tune</span><span>Settings</span></a></nav></div><div class="p-space-md border-t border-outline-variant bg-surface-container-lowest flex flex-col gap-space-sm"><div class="flex items-center justify-between p-space-xs px-space-sm border border-outline-variant rounded bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Pipeline: Active</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v1.2</span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm font-semibold text-on-surface">Alex R.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Solo Creator</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs py-space-xs px-space-sm border border-outline-variant rounded bg-surface-container-low"><span class="material-symbols-outlined text-outline text-[16px]">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant">Next Drop: Tomorrow 18:00 UTC</span></div></div><div class="flex items-center gap-space-md"><button class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center" type="button">New Short</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKRe7KnnTKvh4PMyczW5U33ToH6I3MPs49XScr-1McrD3Jk9To5enik7U7Uvi33fWZHbk1kwGLJybrDivY49Eny3-S-UuklMw46nbgxDJ2mf5B7Zu_dExtn3MDLXD-hCGAVOkDmbkz63hfr_4OyBQChS4OhDvsdf-FILBPN7J6w9SqZvZdXlJDDUcfpleCzUo2BqZNLCo_uxi6FP2kMD2PxV-jw7mMH21Cth0sU4"/></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full p-space-md lg:p-space-lg gap-space-lg">
+<!-- Breadcrumb & Library Metrics Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface">Asset Library</span>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm border border-outline-variant">Workshop Vault</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Archival catalog of AI generation passes, renders, audio stems, and final master deliverables.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest border border-outline-variant rounded">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1,420 renders logged</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-lowest border border-outline-variant rounded">
+<span class="material-symbols-outlined text-[16px] text-outline">hard_drive</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14.8 GB persistent</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Console -->
+<div class="flex flex-col gap-space-sm p-space-md bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19]">
+<div class="flex flex-col xl:flex-row gap-space-md items-stretch xl:items-center justify-between">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-space-md py-2 text-on-surface font-body-md text-body-md bg-surface border border-outline-variant rounded focus:outline-none focus:border-primary-container placeholder:text-on-surface-variant" id="library-search-input" placeholder="Search prompt text, episode title, seed, or model..." type="text"/>
+</div>
+<!-- Controls & Selectors -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm">
+<!-- Episode Selector -->
+<div class="relative min-w-[150px] flex-1 sm:flex-none">
+<select class="w-full appearance-none bg-surface border border-outline-variant rounded px-space-sm py-2 pr-8 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary-container cursor-pointer" id="filter-episode">
+<option value="all">All episodes</option>
+<option value="143">Episode #143</option>
+<option value="142">Episode #142</option>
+<option value="141">Episode #141</option>
+<option value="140">Episode #140</option>
+<option value="139">Episode #139</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Asset Type Selector -->
+<div class="relative min-w-[150px] flex-1 sm:flex-none">
+<select class="w-full appearance-none bg-surface border border-outline-variant rounded px-space-sm py-2 pr-8 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary-container cursor-pointer" id="filter-type">
+<option value="all">All types</option>
+<option value="video">Video renders</option>
+<option value="image">Midjourney images</option>
+<option value="voice">Voice clips</option>
+<option value="sfx">SFX stems</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">expand_more</span>
+</div>
+<!-- Date Range -->
+<div class="relative min-w-[140px] flex-1 sm:flex-none">
+<select class="w-full appearance-none bg-surface border border-outline-variant rounded px-space-sm py-2 pr-8 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary-container cursor-pointer" id="filter-date">
+<option value="7d">Last 7 days</option>
+<option value="30d">Last 30 days</option>
+<option value="all">All time</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-[18px] text-outline">calendar_month</span>
+</div>
+<!-- View Switcher -->
+<div class="flex items-center border border-outline-variant rounded p-0.5 bg-surface-container-low shrink-0">
+<button class="px-space-sm py-1.5 rounded flex items-center justify-center bg-surface-container-lowest text-on-surface shadow-[1px_1px_0px_#0c1f19]" id="view-grid-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="px-space-sm py-1.5 rounded flex items-center justify-center text-outline hover:text-on-surface" id="view-table-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Filter Indicators -->
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-surface-container-high">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active filter tags:</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm border border-outline-variant">
+        Latest batch
+        <button class="hover:text-error flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm border border-outline-variant">
+        Renders &gt; 1080p
+        <button class="hover:text-error flex items-center" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline ml-auto" type="button">Clear filters</button>
+</div>
+</div>
+<!-- Grid View Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md" id="grid-view-panel">
+<!-- Card 1: Video (Teal Bar) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #142</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Runway Gen-3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Hyper-speed 3x3 F2L finger tricks</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">Used in final edit</span>
+</div>
+<!-- Preview Stage -->
+<div class="relative mx-space-md ml-space-lg h-52 bg-surface-container-high rounded border border-outline-variant overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Macro close up high frame rate capture of speedcuber hands performing rapid F2L rotations on a bright stickerless 3x3 Rubik cube, neon cyan and deep forest green studio workshop lighting, crisp motion blur on fingertips." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiu4MZ-q7uqMdvVoFaMwCRmYaIAgzB7Fc-PrDifbIktayK0ByQy7_dcfaEVzknlAPeN6TMK9dbLokeBWCoC66rkFbiJDhlHddSSc71s-w0OZKk4fM9pwYh28Ut29kCt4kGkYUjkG1OmT-n5qHI-NwfxKX2rYxp0NUa_AEpLmzEIHnPg62pSnQ80Gbli8nqWsjQ2QObcguxdPTTn-vT9-iosL48CC9l1r_JAxuYe8E"/>
+<div class="absolute inset-0 bg-on-surface/20 flex items-center justify-center">
+<button class="w-12 h-12 rounded-full bg-surface-container-lowest border border-on-surface flex items-center justify-center text-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">videocam</span> 4s loop
+        </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded">
+          1080x1920 · 60fps
+        </div>
+</div>
+<!-- Prompt Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Prompt: Close-up high angle hyperlapse of hands solving F2L slot, cinematic directional teal rim lighting, clean mechanics.
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+            Copy prompt
+          </button>
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-primary font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 2: Image (Teal Bar) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #141</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Midjourney v6.1</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Metallic mirror cube extreme close up</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">Used as hook frame</span>
+</div>
+<!-- Preview Stage -->
+<div class="relative mx-space-md ml-space-lg h-52 bg-surface-container-high rounded border border-outline-variant overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Reflective brushed silver chrome mirror blocks Rubik cube with asymmetric geometric facets reflecting emerald workshop tools on wooden workbench, studio key lighting, sharp depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSY-4UPsa4sNR1yFBkwfAygfqHyYPX3wc5bAEbUbRcwaphJuZ0--85P32PIY9_GeIRgFBtuHh3xTEwGKBCRiN-sScrQirf6aYbsvbyqr7HUYPg_FEqefRnimP-_skjSvk9tE7SEJ8pAIVsbJNYJZqvMsxt1u_yQflwGKLQCNVjjFnvmDz6sEzqQ9UiBAzBmTNITI1B2oTUwT7KI_Y7P7xdQ9yF1KvRo0UolEhR4TI"/>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">image</span> PNG Still
+        </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded">
+          4096x2304 · 8.4 MB
+        </div>
+</div>
+<!-- Prompt Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Prompt: High key studio shot of mirror blocks cube distorted, ray traced metallic sheen, vibrant reflections, macro lens --ar 9:16 --v 6.1
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+            Seed #884920
+          </button>
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-primary font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download full res
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 3: Audio (Teal Bar) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #143</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">ElevenLabs Adam voice</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Sarcastic commentary hook v2</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">Selected master</span>
+</div>
+<!-- Waveform / Player Stage -->
+<div class="mx-space-md ml-space-lg p-space-md bg-surface rounded border border-outline-variant flex flex-col justify-center gap-space-sm h-52">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">graphic_eq</span>
+            Hook_Adam_Take02_Dry.wav
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">00:03.4</span>
+</div>
+<!-- Interactive Waveform SVG Simulation -->
+<div class="h-20 w-full flex items-center gap-1 px-1 bg-surface-container-lowest rounded border border-outline-variant">
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-8 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-12 bg-primary rounded-full"></span>
+<span class="w-1 h-16 bg-primary rounded-full"></span>
+<span class="w-1 h-10 bg-primary rounded-full"></span>
+<span class="w-1 h-14 bg-primary-container rounded-full"></span>
+<span class="w-1 h-6 bg-primary-container rounded-full"></span>
+<span class="w-1 h-12 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-14 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-8 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-16 bg-primary rounded-full"></span>
+<span class="w-1 h-12 bg-primary rounded-full"></span>
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-10 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-6 bg-outline-variant rounded-full"></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="w-8 h-8 rounded bg-surface-container-high border border-on-surface flex items-center justify-center text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="w-2/5 h-full bg-primary-container"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">44.1kHz · 24-bit</span>
+</div>
+</div>
+<!-- Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Script line: "You think this solve was pure luck? Watch the corner twist in three, two, one..."
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">notes</span>
+            Transcript
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download WAV
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 4: Video (Yellow Bar - Alternative Take) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #140</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Luma Dream Machine</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Pyraminx top layer rotation slow motion</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-container font-label-sm text-label-sm font-bold shrink-0">Alternative take</span>
+</div>
+<!-- Preview Stage -->
+<div class="relative mx-space-md ml-space-lg h-52 bg-surface-container-high rounded border border-outline-variant overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Pyraminx triangular speed puzzle hovering in air, apex layer rotating smoothly in slow motion with subtle teal light glints reflecting from matte plastic surfaces, minimal pegboard bench background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVRd_DVocimSfrouT_OG8OQj7ia2NM-XuUrlkQlMU3xAIr187OWF8sfexCjOjPcKdzjSCs-Z9nmrk_5KlIVXS-RQAh8odC2mip5PtfU45aimi9NHDl8qUP-6YeVHe-1uRpELXnuapNvhrY0-1-QSoNrTbPMso5ri9mdnxTiHQ9Vy3VkxKJyhGUc285PC9C1gNOvqLh-LFKhzfo-KrRqJBafqzcCrQ8eqGxC-E-HfQ"/>
+<div class="absolute inset-0 bg-on-surface/20 flex items-center justify-center">
+<button class="w-12 h-12 rounded-full bg-surface-container-lowest border border-on-surface flex items-center justify-center text-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">motion_blur</span> 5s take
+        </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded">
+          1080x1920 · 24fps
+        </div>
+</div>
+<!-- Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Prompt: Zero gravity rotating apex tip of neon stickerless Pyraminx, crisp edge focus, high FPS physical precision solve.
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_copy</span>
+            Duplicate
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+            Reuse in new Short
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 5: Image (Teal Bar) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #139</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">DALL-E 3</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cubing tournament stage background illustration</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">Used</span>
+</div>
+<!-- Preview Stage -->
+<div class="relative mx-space-md ml-space-lg h-52 bg-surface-container-high rounded border border-outline-variant overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Stylized graphic workshop illustration of an energetic world cubing championship arena, competitor timer mats, overhead projector screens, bold graphic poster aesthetic in teal, deep forest, and muted clay orange." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAalf3px59Ux6IqR5ECMiZE8vo7OaCBa7KoRvIh32-DTV55UM5GT6LolapH0rKe5TjSj8IMiMfQzukszkcyPbMS9oWb1yfrde-yGlwkpL-kOm_dmiYHRTyA9YXVTqcNpC1r9stC23LS7LXzLwSzDTqC0zxSJkBru6Dv-d7NpOiPEVhNsZAiZzqp2zU6jxfQ98j6MQKIxiNrzP_R1s71lsDa3JkaTx43clc8sjC_gbc"/>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">palette</span> Vector Plate
+        </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-on-surface/80 text-surface-container-lowest font-label-sm text-label-sm rounded">
+          1792x1024 · 3.1 MB
+        </div>
+</div>
+<!-- Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Prompt: Flat vector illustration of speedcubing main arena with countdown clocks, bold outlines, mechanical precision layout.
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+            Inspect
+          </button>
+<button class="px-space-sm py-1 rounded bg-secondary-container text-on-primary font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download
+          </button>
+</div>
+</div>
+</div>
+<!-- Card 6: Audio SFX (Teal Bar) -->
+<div class="flex flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container z-10"></div>
+<!-- Header Meta -->
+<div class="p-space-md pb-space-sm pl-space-lg flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Episode #142</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Custom SFX</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Speedcube clicking mechanical sound effect burst</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-bold shrink-0">Used</span>
+</div>
+<!-- Waveform Stage -->
+<div class="mx-space-md ml-space-lg p-space-md bg-surface rounded border border-outline-variant flex flex-col justify-center gap-space-sm h-52">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">new_window</span>
+            Magnetic_Tactile_Clicks_04.wav
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">00:01.8</span>
+</div>
+<!-- Waveform Simulation -->
+<div class="h-20 w-full flex items-center gap-1 px-1 bg-surface-container-lowest rounded border border-outline-variant">
+<span class="w-1 h-3 bg-primary-container rounded-full"></span>
+<span class="w-1 h-14 bg-primary rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-16 bg-primary rounded-full"></span>
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-12 bg-primary rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-14 bg-primary rounded-full"></span>
+<span class="w-1 h-4 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-10 bg-primary-container rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-16 bg-primary rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-8 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-2 bg-outline-variant rounded-full"></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="w-8 h-8 rounded bg-surface-container-high border border-on-surface flex items-center justify-center text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="w-4/5 h-full bg-primary-container"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">48kHz · Lossless</span>
+</div>
+</div>
+<!-- Detail & Actions -->
+<div class="p-space-md pl-space-lg flex flex-col gap-space-sm mt-auto">
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 bg-surface p-space-xs rounded border border-outline-variant">
+          Audio profile: Synthesized magnetic core snap with crisp plastic resonance and subtle air displacement transient.
+        </p>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+            EQ Match
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md border border-on-surface shadow-[1px_1px_0px_#0c1f19] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Download WAV
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Table View Container (Initially Hidden) -->
+<div class="hidden flex-col bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19] overflow-x-auto" id="table-view-panel">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant">
+<th class="p-space-md font-label-md text-label-md text-on-surface w-12">Status</th>
+<th class="p-space-md font-label-md text-label-md text-on-surface">Asset Title &amp; Prompt</th>
+<th class="p-space-md font-label-md text-label-md text-on-surface">Episode</th>
+<th class="p-space-md font-label-md text-label-md text-on-surface">Model / Source</th>
+<th class="p-space-md font-label-md text-label-md text-on-surface">Format</th>
+<th class="p-space-md font-label-md text-label-md text-on-surface text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block" title="Used in final edit"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Hyper-speed 3x3 F2L finger tricks</span>
+<span class="text-on-surface-variant truncate max-w-md">Close-up high angle hyperlapse of hands solving F2L slot...</span>
+</div>
+</td>
+<td class="p-space-md">Episode #142</td>
+<td class="p-space-md">Runway Gen-3</td>
+<td class="p-space-md">1080x1920 · 60fps MP4</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Download</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block" title="Used as hook frame"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Metallic mirror cube extreme close up</span>
+<span class="text-on-surface-variant truncate max-w-md">High key studio shot of mirror blocks cube distorted...</span>
+</div>
+</td>
+<td class="p-space-md">Episode #141</td>
+<td class="p-space-md">Midjourney v6.1</td>
+<td class="p-space-md">4096x2304 PNG</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Download</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block" title="Selected master"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Sarcastic commentary hook v2</span>
+<span class="text-on-surface-variant truncate max-w-md">"You think this solve was pure luck? Watch the corner twist..."</span>
+</div>
+</td>
+<td class="p-space-md">Episode #143</td>
+<td class="p-space-md">ElevenLabs (Adam)</td>
+<td class="p-space-md">44.1kHz WAV</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Download</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-tertiary-container inline-block" title="Alternative take"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Pyraminx top layer rotation slow motion</span>
+<span class="text-on-surface-variant truncate max-w-md">Zero gravity rotating apex tip of neon stickerless Pyraminx...</span>
+</div>
+</td>
+<td class="p-space-md">Episode #140</td>
+<td class="p-space-md">Luma Dream Machine</td>
+<td class="p-space-md">1080x1920 MP4</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Reuse</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block" title="Used"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Cubing tournament stage background illustration</span>
+<span class="text-on-surface-variant truncate max-w-md">Flat vector illustration of speedcubing main arena with countdown...</span>
+</div>
+</td>
+<td class="p-space-md">Episode #139</td>
+<td class="p-space-md">DALL-E 3</td>
+<td class="p-space-md">1792x1024 PNG</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Download</button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface transition-colors">
+<td class="p-space-md">
+<span class="w-3 h-3 rounded-full bg-primary-container inline-block" title="Used"></span>
+</td>
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Speedcube clicking mechanical sound effect burst</span>
+<span class="text-on-surface-variant truncate max-w-md">Synthesized magnetic core snap with crisp plastic resonance...</span>
+</div>
+</td>
+<td class="p-space-md">Episode #142</td>
+<td class="p-space-md">Custom SFX</td>
+<td class="p-space-md">48kHz WAV</td>
+<td class="p-space-md text-right">
+<button class="px-space-sm py-1 bg-surface-container rounded border border-outline-variant text-on-surface font-label-sm text-label-sm" type="button">Download</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Workbench Status & Export Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-container-lowest border border-outline-variant rounded shadow-[2px_2px_0px_#0c1f19]">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">database</span>
+<span>Displaying 48 generated assets · 3.2 GB stored in workshop cache · Filter active: None</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        Export asset metadata (CSV)
+      </button>
+</div>
+</div>
+</div>
+<!-- Interactive Switching Script -->
+<script>
+  (function initLibraryInteractions() {
+    const gridBtn = document.getElementById('view-grid-btn');
+    const tableBtn = document.getElementById('view-table-btn');
+    const gridPanel = document.getElementById('grid-view-panel');
+    const tablePanel = document.getElementById('table-view-panel');
+
+    if (!gridBtn || !tableBtn || !gridPanel || !tablePanel) return;
+
+    gridBtn.addEventListener('click', () => {
+      gridPanel.classList.remove('hidden');
+      tablePanel.classList.add('hidden');
+      
+      gridBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-[1px_1px_0px_#0c1f19]');
+      gridBtn.classList.remove('text-outline');
+      
+      tableBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-[1px_1px_0px_#0c1f19]');
+      tableBtn.classList.add('text-outline');
+    });
+
+    tableBtn.addEventListener('click', () => {
+      gridPanel.classList.add('hidden');
+      tablePanel.classList.remove('hidden');
+      
+      tableBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-[1px_1px_0px_#0c1f19]');
+      tableBtn.classList.remove('text-outline');
+      
+      gridBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-[1px_1px_0px_#0c1f19]');
+      gridBtn.classList.add('text-outline');
+    });
+  })();
+</script></main></div></body></html>

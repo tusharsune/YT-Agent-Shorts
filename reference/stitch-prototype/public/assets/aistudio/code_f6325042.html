@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#ffb4a4","on-secondary-fixed-variant":"#8c1800","surface":"#e8fef5","primary-fixed-dim":"#55dbca","secondary-container":"#ff5d3b","surface-container-low":"#e2f9ef","surface-container":"#ddf3e9","error":"#ba1a1a","on-tertiary":"#ffffff","tertiary-container":"#cf9a06","tertiary":"#795900","on-tertiary-fixed-variant":"#5c4300","tertiary-fixed-dim":"#f7be36","error-container":"#ffdad6","outline-variant":"#bbcac6","inverse-primary":"#55dbca","surface-bright":"#e8fef5","secondary":"#b42809","primary-fixed":"#75f7e6","surface-variant":"#d1e7de","surface-container-highest":"#d1e7de","background":"#e8fef5","on-secondary":"#ffffff","surface-tint":"#006a60","on-secondary-container":"#5c0c00","on-tertiary-fixed":"#261900","inverse-on-surface":"#dff6ec","on-primary-fixed-variant":"#005048","on-primary-container":"#00413a","primary":"#006a60","on-error":"#ffffff","on-surface":"#0c1f19","surface-dim":"#c9dfd6","secondary-fixed":"#ffdad3","on-tertiary-container":"#4b3600","on-error-container":"#93000a","tertiary-fixed":"#ffdea0","on-background":"#0c1f19","on-surface-variant":"#3c4947","on-secondary-fixed":"#3e0500","surface-container-high":"#d7ede4","inverse-surface":"#21342e","outline":"#6c7a77","primary-container":"#1fb6a6","on-primary-fixed":"#00201c"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","margin-tablet":"1.5rem","gutter-tablet":"0.75rem","space-lg":"1.5rem","space-xl":"2rem","margin":"1rem","gutter-desktop":"1.25rem","margin-desktop":"2rem","gutter":"1rem","space-xs":"0.25rem","space-md":"1rem"},fontFamily:{"headline-lg-mobile":["Outfit"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Outfit"],"headline-md":["Outfit"],"display-hero-mobile":["Outfit"],"metric-num":["Outfit"],"headline-sm":["Outfit"],"display-hero":["Outfit"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"metric-num":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"54px",letterSpacing:"-0.03em",fontWeight:"800"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest border-r border-outline-variant z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKRe7KnnTKvh4PMyczW5U33ToH6I3MPs49XScr-1McrD3Jk9To5enik7U7Uvi33fWZHbk1kwGLJybrDivY49Eny3-S-UuklMw46nbgxDJ2mf5B7Zu_dExtn3MDLXD-hCGAVOkDmbkz63hfr_4OyBQChS4OhDvsdf-FILBPN7J6w9SqZvZdXlJDDUcfpleCzUo2BqZNLCo_uxi6FP2kMD2PxV-jw7mMH21Cth0sU4"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Pegboard</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Cube Shorts Lab</span></div></div></div><nav class="flex flex-col py-space-sm" data-active-classes="border-l-4 border-primary-container text-on-surface font-bold bg-surface-container-low"><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="overview" href="#"><span class="material-symbols-outlined text-outline">dashboard</span><span>Overview</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors border-l-4 border-primary-container text-on-surface font-bold bg-surface-container-low" data-path="prompt-queue" href="#"><span class="material-symbols-outlined text-outline">terminal</span><span>Prompt Queue</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="episode-tracker" href="#"><span class="material-symbols-outlined text-outline">video_library</span><span>Episode Tracker</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="history-and-library" href="#"><span class="material-symbols-outlined text-outline">folder_open</span><span>History &amp; Library</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="script-viewer" href="#"><span class="material-symbols-outlined text-outline">description</span><span>Script Viewer</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="calendar" href="#"><span class="material-symbols-outlined text-outline">calendar_today</span><span>Calendar</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="publish-log" href="#"><span class="material-symbols-outlined text-outline">publish</span><span>Publish Log</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant font-label-md text-label-md transition-colors hover:text-on-surface hover:bg-surface-container-lowest border-l-4 border-transparent" data-path="settings" href="#"><span class="material-symbols-outlined text-outline">tune</span><span>Settings</span></a></nav></div><div class="p-space-md border-t border-outline-variant bg-surface-container-lowest flex flex-col gap-space-sm"><div class="flex items-center justify-between p-space-xs px-space-sm border border-outline-variant rounded bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Pipeline: Active</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">v1.2</span></div><div class="flex flex-col"><span class="font-body-sm text-body-sm font-semibold text-on-surface">Alex R.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Solo Creator</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs py-space-xs px-space-sm border border-outline-variant rounded bg-surface-container-low"><span class="material-symbols-outlined text-outline text-[16px]">schedule</span><span class="font-label-sm text-label-sm text-on-surface-variant">Next Drop: Tomorrow 18:00 UTC</span></div></div><div class="flex items-center gap-space-md"><button class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center" type="button">New Short</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKRe7KnnTKvh4PMyczW5U33ToH6I3MPs49XScr-1McrD3Jk9To5enik7U7Uvi33fWZHbk1kwGLJybrDivY49Eny3-S-UuklMw46nbgxDJ2mf5B7Zu_dExtn3MDLXD-hCGAVOkDmbkz63hfr_4OyBQChS4OhDvsdf-FILBPN7J6w9SqZvZdXlJDDUcfpleCzUo2BqZNLCo_uxi6FP2kMD2PxV-jw7mMH21Cth0sU4"/></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-7xl mx-auto w-full flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Prompt Queue &amp; Fulfill</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Active generation backlog across 4 scheduled short-form episodes</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="bg-surface-container-lowest text-on-surface font-label-md text-label-md px-space-md py-space-xs rounded border border-outline-variant hover:bg-surface-container-low transition-colors flex items-center gap-space-xs" id="copyPendingBtn" type="button">
+<span class="material-symbols-outlined text-base">copy_all</span>
+<span>Copy all prompts</span>
+</button>
+<button class="bg-secondary-container text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center gap-space-xs" id="exportPendingBtn" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export all pending prompts</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending prompts</span>
+<span class="font-metric-num text-metric-num text-on-surface">14</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">hourglass_top</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Urgent bottlenecks</span>
+<span class="font-metric-num text-metric-num text-secondary">1</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fulfilled today</span>
+<span class="font-metric-num text-metric-num text-primary">8</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg turnaround</span>
+<span class="font-metric-num text-metric-num text-on-surface">6.4m</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded border border-outline-variant flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-lowest border border-outline-variant rounded font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container" id="promptSearchInput" placeholder="Search prompts, episodes, models..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded border border-outline-variant">
+<button class="filter-status-btn px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant font-semibold" data-filter-status="all" type="button">All</button>
+<button class="filter-status-btn px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" data-filter-status="pending" type="button">Pending</button>
+<button class="filter-status-btn px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" data-filter-status="fulfilled" type="button">Fulfilled</button>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant hidden sm:block"></div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="filter-type-btn px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface border border-on-surface font-semibold" data-filter-type="all" type="button">All types</button>
+<button class="filter-type-btn px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-on-surface" data-filter-type="video" type="button">Video prompts (6)</button>
+<button class="filter-type-btn px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-on-surface" data-filter-type="image" type="button">Image prompts (5)</button>
+<button class="filter-type-btn px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface-variant border border-outline-variant hover:border-on-surface" data-filter-type="voice" type="button">Voice direction (3)</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md" id="queueContainer">
+<div class="prompt-card bg-surface-container-lowest rounded border border-outline-variant overflow-hidden flex flex-col md:flex-row relative" data-status="pending" data-type="video">
+<div class="w-1.5 self-stretch bg-[#FFC53D] shrink-0"></div>
+<div class="p-space-md flex-1 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">God's Number Blindfold</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded bg-surface-container-low border border-outline-variant">Scene 3</span>
+<span class="font-label-sm text-label-sm text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant">Video (Runway Gen-3)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#FFC53D]"></span>
+                Pending asset
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prompt generation text</span>
+<button class="copy-single-btn font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" data-prompt="Macro hyper-detailed camera zoom into a GAN 12 MagLev speedcube turning at 15 turns per second, neon orange internal magnets clicking into place, studio lighting, high frame rate, crisp focus" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy prompt</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface select-all leading-relaxed prompt-text-body">Macro hyper-detailed camera zoom into a GAN 12 MagLev speedcube turning at 15 turns per second, neon orange internal magnets clicking into place, studio lighting, high frame rate, crisp focus</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Aspect: 9:16 vertical</span>
+<span>Duration: 4.0s</span>
+<span>Motion scale: 7</span>
+<span>Seed: 8841920</span>
+</div>
+</div>
+<div class="p-space-md border-t md:border-t-0 md:border-l border-outline-variant bg-surface-container-low flex flex-col justify-center items-center gap-space-sm md:w-80 shrink-0">
+<input accept="video/mp4,video/quicktime" class="hidden" id="fileUpload1" type="file"/>
+<div class="upload-dropzone w-full h-full min-h-[110px] rounded border border-dashed border-outline hover:border-on-surface bg-surface-container-lowest p-space-sm flex flex-col items-center justify-center text-center cursor-pointer transition-colors" onclick="document.getElementById('fileUpload1').click()">
+<span class="material-symbols-outlined text-outline text-2xl mb-1">cloud_upload</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Drop video file or Browse</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">MP4 or MOV up to 120MB</span>
+</div>
+<button class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-1.5 rounded border border-outline-variant hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs" onclick="document.getElementById('fileUpload1').click()" type="button">
+<span class="material-symbols-outlined text-sm">file_upload</span>
+<span>Select file</span>
+</button>
+</div>
+</div>
+<div class="prompt-card bg-surface-container-lowest rounded border border-outline-variant overflow-hidden flex flex-col md:flex-row relative" data-status="pending" data-type="voice">
+<div class="w-1.5 self-stretch bg-[#FFC53D] shrink-0"></div>
+<div class="p-space-md flex-1 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">The Impossible 1x1 Parody</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded bg-surface-container-low border border-outline-variant">Scene 1</span>
+<span class="font-label-sm text-label-sm text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant">Voice (ElevenLabs)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#FFC53D]"></span>
+                Pending stem
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Voice prompt &amp; delivery</span>
+<button class="copy-single-btn font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" data-prompt="Deadpan instructional narrator speaking with high confidence about the complex mathematics behind solving a 1x1 Rubik's cube in under 0.05 seconds, pacing snappy, sarcastic undertone" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy prompt</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface select-all leading-relaxed prompt-text-body">Deadpan instructional narrator speaking with high confidence about the complex mathematics behind solving a 1x1 Rubik's cube in under 0.05 seconds, pacing snappy, sarcastic undertone</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Voice: Adam (Deep British)</span>
+<span>Stability: 0.65</span>
+<span>Clarity: 0.85</span>
+<span>Est duration: 8.2s</span>
+</div>
+</div>
+<div class="p-space-md border-t md:border-t-0 md:border-l border-outline-variant bg-surface-container-low flex flex-col justify-center items-center gap-space-sm md:w-80 shrink-0">
+<input accept="audio/wav,audio/mpeg" class="hidden" id="fileUpload2" type="file"/>
+<div class="upload-dropzone w-full h-full min-h-[110px] rounded border border-dashed border-outline hover:border-on-surface bg-surface-container-lowest p-space-sm flex flex-col items-center justify-center text-center cursor-pointer transition-colors" onclick="document.getElementById('fileUpload2').click()">
+<span class="material-symbols-outlined text-outline text-2xl mb-1">mic</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Drop audio stem (.wav / .mp3)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">High quality mono stem</span>
+</div>
+<button class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md py-1.5 rounded border border-outline-variant hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs" onclick="document.getElementById('fileUpload2').click()" type="button">
+<span class="material-symbols-outlined text-sm">audio_file</span>
+<span>Select audio file</span>
+</button>
+</div>
+</div>
+<div class="prompt-card bg-surface-container-lowest rounded border border-outline-variant overflow-hidden flex flex-col md:flex-row relative" data-status="fulfilled" data-type="image">
+<div class="w-1.5 self-stretch bg-[#1FB6A6] shrink-0"></div>
+<div class="p-space-md flex-1 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mirror Blocks Speed Run</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded bg-surface-container-low border border-outline-variant">Scene 4</span>
+<span class="font-label-sm text-label-sm text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant">Image (Midjourney v6)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">check_circle</span>
+                Fulfilled 20m ago
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prompt generation text</span>
+<button class="copy-single-btn font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" data-prompt="Monochrome brushed silver mirror cube reflecting neon studio lights on polished dark concrete surface, dramatic 45-degree angle composition" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy prompt</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface select-all leading-relaxed prompt-text-body">Monochrome brushed silver mirror cube reflecting neon studio lights on polished dark concrete surface, dramatic 45-degree angle composition</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Aspect: 9:16</span>
+<span>Stylize: 250</span>
+<span>Raw mode: On</span>
+<span>Upscaled: 2160x3840</span>
+</div>
+</div>
+<div class="p-space-md border-t md:border-t-0 md:border-l border-outline-variant bg-surface-container-low flex flex-col justify-between items-center gap-space-sm md:w-80 shrink-0">
+<div class="relative w-full h-28 rounded border border-outline-variant overflow-hidden group bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A hyper-realistic studio shot of a metallic silver mirror cube resting on dark wet asphalt, reflecting vibrant orange and teal stage lights with shallow depth of field, dramatic cinematic product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWk0VZZMJp5FtZZotIFvMF7Bdn0ToKaoxH-d_gLmlJmedBe6qytKIbafp9Bdvoowe__XsjEStnvhM0nWg-nQua9KbjPmwtGMxERLtLc3rRx8XGJHA4e3ZJ0WHZYL3Asjan6msHdOicTHDq4Kf5v1oUfJbbZxWgX-H4Kvy4ThID2AWNtuzk_YjAucjlPNnAy8fJGYrqlXvs7NEfjJTCTaxbLWQx71mTFe8rqs6cUdg"/>
+<div class="absolute inset-0 bg-on-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-space-xs">
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container" title="Preview asset" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container" title="Download asset" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+</div>
+</div>
+<div class="w-full flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">mirror_cube_sc4_v6.png</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm shrink-0" type="button">Replace file</button>
+</div>
+</div>
+</div>
+<div class="prompt-card bg-surface-container-lowest rounded border border-outline-variant overflow-hidden flex flex-col md:flex-row relative" data-status="pending" data-type="video">
+<div class="w-1.5 self-stretch bg-[#FF5D3B] shrink-0"></div>
+<div class="p-space-md flex-1 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ghost Cube Nightmare</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded bg-surface-container-low border border-outline-variant">Scene 2</span>
+<span class="font-label-sm text-label-sm text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant">Video (Luma Dream Machine)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1 bg-secondary-fixed/40 px-2 py-0.5 rounded border border-secondary-container">
+<span class="material-symbols-outlined text-base text-secondary">error</span>
+                Urgent blocker (drop tomorrow)
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prompt generation text</span>
+<button class="copy-single-btn font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" data-prompt="Slow panning sequence around an unaligned ghost cube showing irregular geometric polyhedral faces casting sharp shadows, high contrast tabletop setup" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy prompt</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface select-all leading-relaxed prompt-text-body">Slow panning sequence around an unaligned ghost cube showing irregular geometric polyhedral faces casting sharp shadows, high contrast tabletop setup</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Camera: Orbit 45 degrees</span>
+<span>Speed: 0.8x</span>
+<span>Lighting: Hard key light right</span>
+<span>Render priority: Immediate</span>
+</div>
+</div>
+<div class="p-space-md border-t md:border-t-0 md:border-l border-outline-variant bg-surface-container-low flex flex-col justify-center items-center gap-space-sm md:w-80 shrink-0">
+<input accept="video/mp4" class="hidden" id="fileUpload3" type="file"/>
+<div class="upload-dropzone w-full h-full min-h-[110px] rounded border border-dashed border-secondary bg-surface-container-lowest p-space-sm flex flex-col items-center justify-center text-center cursor-pointer transition-colors" onclick="document.getElementById('fileUpload3').click()">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1">warning</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Upload blocking asset</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Production stalled on this shot</span>
+</div>
+<button class="w-full bg-secondary-container text-on-primary font-label-md text-label-md py-1.5 rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-space-xs" onclick="document.getElementById('fileUpload3').click()" type="button">
+<span class="material-symbols-outlined text-sm">upload</span>
+<span>Fulfill shot now</span>
+</button>
+</div>
+</div>
+<div class="prompt-card bg-surface-container-lowest rounded border border-outline-variant overflow-hidden flex flex-col md:flex-row relative" data-status="fulfilled" data-type="voice">
+<div class="w-1.5 self-stretch bg-[#1FB6A6] shrink-0"></div>
+<div class="p-space-md flex-1 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">God's Number Blindfold</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded bg-surface-container-low border border-outline-variant">Scene 1</span>
+<span class="font-label-sm text-label-sm text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant">Voice (ElevenLabs)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">check_circle</span>
+                Fulfilled 1h ago
+              </span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Voice line audio script</span>
+<button class="copy-single-btn font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" data-prompt="Energetic hook intro: Did you know the world record for solving a Rubik's cube blindfolded is under fifteen seconds?" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy prompt</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface select-all leading-relaxed prompt-text-body">Energetic hook intro: Did you know the world record for solving a Rubik's cube blindfolded is under fifteen seconds?</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Voice: Marcus (Hyped)</span>
+<span>Duration: 4.8s</span>
+<span>Sample rate: 48kHz</span>
+<span>Mastered: LUFS -14</span>
+</div>
+</div>
+<div class="p-space-md border-t md:border-t-0 md:border-l border-outline-variant bg-surface-container-low flex flex-col justify-between items-center gap-space-sm md:w-80 shrink-0">
+<div class="w-full bg-surface-container-lowest p-space-sm rounded border border-outline-variant flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Intro_Hook_V1.wav</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0:04</span>
+</div>
+<div class="flex items-center gap-space-xs py-1">
+<button class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center" id="playAudioBtn" type="button">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+</button>
+<div class="flex-1 h-8 flex items-center gap-0.5 px-1 bg-surface-container-low rounded">
+<div class="w-1 h-2 bg-primary rounded-full"></div>
+<div class="w-1 h-5 bg-primary rounded-full"></div>
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<div class="w-1 h-3 bg-primary rounded-full"></div>
+<div class="w-1 h-7 bg-primary rounded-full"></div>
+<div class="w-1 h-4 bg-primary rounded-full"></div>
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<div class="w-1 h-8 bg-primary rounded-full"></div>
+<div class="w-1 h-5 bg-primary rounded-full"></div>
+<div class="w-1 h-3 bg-outline rounded-full"></div>
+<div class="w-1 h-4 bg-outline rounded-full"></div>
+<div class="w-1 h-2 bg-outline rounded-full"></div>
+<div class="w-1 h-5 bg-outline rounded-full"></div>
+<div class="w-1 h-3 bg-outline rounded-full"></div>
+<div class="w-1 h-1 bg-outline rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="w-full flex items-center justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Synced to timeline</span>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Re-record</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low border border-outline-variant flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline">tune</span>
+<span class="font-body-md text-body-md">Showing 5 active pipeline tasks across 3 production episodes</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-[#FF5D3B]"></span>Urgent blocker</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-[#FFC53D]"></span>Pending asset</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-[#1FB6A6]"></span>Fulfilled</span>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 bg-on-surface text-surface-container-lowest px-space-md py-space-sm rounded border border-on-surface shadow-[2px_2px_0px_#0c1f19] font-label-md text-label-md hidden items-center gap-space-xs z-50" id="toastNotification">
+<span class="material-symbols-outlined text-primary-fixed-dim text-base">check</span>
+<span id="toastMessage">Copied to clipboard</span>
+</div>
+</div>
+<script>
+  (function() {
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = msg;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.remove('flex');
+        toast.classList.add('hidden');
+      }, 2400);
+    }
+
+    document.querySelectorAll('.copy-single-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.getAttribute('data-prompt') || '';
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('Prompt copied to clipboard');
+        });
+      });
+    });
+
+    const copyAllBtn = document.getElementById('copyPendingBtn');
+    if (copyAllBtn) {
+      copyAllBtn.addEventListener('click', () => {
+        const pendingCards = document.querySelectorAll('.prompt-card[data-status="pending"] .prompt-text-body');
+        const prompts = Array.from(pendingCards).map((p, idx) => `${idx + 1}. ${p.textContent.trim()}`).join('\n\n');
+        navigator.clipboard.writeText(prompts).then(() => {
+          showToast('Copied all pending prompts');
+        });
+      });
+    }
+
+    const exportBtn = document.getElementById('exportPendingBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        showToast('Exported pending prompts batch (JSON/TXT)');
+      });
+    }
+
+    let currentTypeFilter = 'all';
+    let currentStatusFilter = 'all';
+
+    function applyFilters() {
+      const searchVal = (document.getElementById('promptSearchInput')?.value || '').toLowerCase().trim();
+      const cards = document.querySelectorAll('.prompt-card');
+
+      cards.forEach(card => {
+        const type = card.getAttribute('data-type');
+        const status = card.getAttribute('data-status');
+        const text = card.textContent.toLowerCase();
+
+        const matchesType = (currentTypeFilter === 'all' || type === currentTypeFilter);
+        const matchesStatus = (currentStatusFilter === 'all' || status === currentStatusFilter);
+        const matchesSearch = (!searchVal || text.includes(searchVal));
+
+        if (matchesType && matchesStatus && matchesSearch) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.remove('flex');
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    document.querySelectorAll('.filter-type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-type-btn').forEach(b => {
+          b.classList.remove('bg-surface-container-high', 'border-on-surface', 'font-semibold', 'text-on-surface');
+          b.classList.add('bg-surface-container-lowest', 'border-outline-variant', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-high', 'border-on-surface', 'font-semibold', 'text-on-surface');
+        btn.classList.remove('bg-surface-container-lowest', 'border-outline-variant', 'text-on-surface-variant');
+        currentTypeFilter = btn.getAttribute('data-filter-type');
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll('.filter-status-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-status-btn').forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'border', 'border-outline-variant', 'font-semibold');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'border', 'border-outline-variant', 'font-semibold');
+        btn.classList.remove('text-on-surface-variant');
+        currentStatusFilter = btn.getAttribute('data-filter-status');
+        applyFilters();
+      });
+    });
+
+    const searchInput = document.getElementById('promptSearchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', applyFilters);
+    }
+
+    const playAudioBtn = document.getElementById('playAudioBtn');
+    if (playAudioBtn) {
+      let isPlaying = false;
+      playAudioBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        const icon = playAudioBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>
